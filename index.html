@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Task Manager Pro</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+
+<body>
+
+<h1>Task Manager Pro</h1>
+
+<p>Gestor de tareas</p>
+
+
+<!-- FORMULARIO PARA AÑADIR TAREAS -->
+<form id="form">
+
+    <!-- Campo de texto para el título de la tarea -->
+    <input type="text" id="titulo" placeholder="Título">
+
+    <!-- Selector para el estado -->
+    <select id="estado">
+        <option>Pendiente</option>
+        <option>En progreso</option>
+        <option>Hecha</option>
+    </select>
+
+    <!-- Selector para la prioridad -->
+    <select id="prioridad">
+        <option>Baja</option>
+        <option>Media</option>
+        <option>Alta</option>
+    </select>
+
+    <!-- Botón que envía el formulario -->
+    <button type="submit">Añadir</button>
+</form>
+
+
+
+<!-- CAMPO DE BÚSQUEDA -->
+<input type="text" id="buscador" placeholder="Buscar...">
+
+<!-- MENSAJES AL USUARIO -->
+<p id="mensaje"></p>
+<!-- Aquí se muestran errores o confirmaciones -->
+
+
+
+<!-- PANEL RESUMEN -->
+<div id="resumen">
+
+    <!-- Muestra el número total de tareas -->
+    <p>Total tareas: <span id="total">0</span></p>
+
+    <!-- Muestra cuántas tareas están pendientes -->
+    <p>Pendientes: <span id="pendientes">0</span></p>
+
+</div>
+
+
+<!-- LISTADO DE TAREAS -->
+<div id="lista"></div>
+<!-- Aquí JavaScript añadirá dinámicamente las tareas -->
+
+
+
+<!-- SCRIPT DE JAVASCRIPT -->
+<script src="script.js"></script>
+<!-- Conecta con el archivo JS donde está toda la lógica -->
+
+</body>
+</html>
